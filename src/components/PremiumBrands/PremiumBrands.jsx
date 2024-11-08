@@ -8,7 +8,7 @@ const PremiumBrands = () => {
     { name: 'Ford', logo: './img/icons8-ford-100.png', alt: 'Ford Logo' },
     { name: 'Kia', logo: './img/icons8-kia-100.png', alt: 'Kia Logo' },
     { name: 'Audi', logo: './img/icons8-audi-50.png', alt: 'Audi Logo' },
-    { name: 'BMW', logo: './img/icons8-bmw-48 (1).png', alt: 'BMW Logo' },
+    { name: 'BMW', logo: '/', alt: 'BMW Logo' },
     { name: 'Lamborghini', logo: './img/icons8-lamborghini-48.png', alt: 'Lamborghini Logo' },
   ];
 
