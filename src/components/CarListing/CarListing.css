@@ -1,0 +1,83 @@
+/* Main container for each car listing */
+.car-listing {
+    width: 100%;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect to slightly scale the listing */
+  .car-listing:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for car image */
+  .car-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  /* Container for car details */
+  .cars-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Car title */
+  .car-details h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Price styling */
+  .car-details .price {
+    font-size: 1.2rem;
+    color: #27ae60;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* General text styling for car details */
+  .car-details p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 6px 0;
+    line-height: 1.5;
+  }
+  
+  /* Features list styling */
+  .features {
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual feature styling */
+  .features li {
+    font-size: 0.9rem;
+    color: #777;
+    background-color: #f1f1f1;
+    padding: 5px 12px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .car-listing {
+      max-width: 100%;
+    }
+  }
+  

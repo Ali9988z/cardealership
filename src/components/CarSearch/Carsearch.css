@@ -1,0 +1,140 @@
+/* Container styles */
+.car-search-container {
+    text-align: center;
+    background-color: #f0f4ff;
+    padding: 40px;
+  }
+  
+  /* Header and subheader styles */
+  .subheader {
+    font-size: 16px;
+    color: #6b7280;
+  }
+  
+  .header-car {
+    font-size: 32px;
+    font-weight: bold;
+    color: #111827;
+    margin: 10px 0;
+  }
+  
+  /* Search bar container styles */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  /* Custom dropdown styles */
+  .dropdown-car {
+    appearance: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #111827;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='%23999' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+    width: 150px;
+    transition: border-color 0.3s;
+  }
+  
+  .dropdown-car:hover {
+    border-color: #3b82f6;
+  }
+  
+  .dropdown-car:focus {
+    outline: none;
+    border-color: #3b82f6;
+  }
+  
+  /* Search button styles */
+  .search-button {
+    background-color: #3b82f6;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Car image styles */
+  .car-imagesearch {
+    margin-top: 30px;
+  }
+  
+  .car-imagesearch img {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .car-search-container {
+      padding: 30px;
+    }
+    
+    .header-car {
+      font-size: 28px; /* Smaller header on tablet screens */
+    }
+    
+    .subheader {
+      font-size: 14px;
+    }
+    
+    .search-bar {
+      flex-direction: column; /* Stack elements vertically */
+      gap: 15px;
+    }
+    
+    .dropdown-car, .search-button {
+      width: 100%; /* Full-width dropdown and button on smaller screens */
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .car-search-container {
+      padding: 20px;
+    }
+    
+    .header-car {
+      font-size: 24px; /* Smaller header on mobile screens */
+    }
+    
+    .subheader {
+      font-size: 13px;
+    }
+    
+    .search-bar {
+      padding: 8px 15px;
+    }
+    
+    .dropdown-car {
+      font-size: 13px;
+      padding: 8px 15px;
+      width: 100%;
+    }
+    
+    .search-button {
+      font-size: 14px;
+      padding: 8px;
+    }
+    
+    .car-imagesearch img {
+      max-width: 100%; /* Ensure image doesn't overflow on small screens */
+    }
+  }
+  
